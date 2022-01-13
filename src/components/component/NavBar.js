@@ -5,9 +5,9 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand navbar-dark bg-primary">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          React
-        </a>
+        <Link className="navbar-brand" to="#">
+          React Contact Manager
+        </Link>
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
@@ -28,6 +28,9 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
+        <Link className="btn btn-outline-light" to="/users/add">
+          Add User
+        </Link>
       </div>
     </nav>
   );
